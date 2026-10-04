@@ -6,21 +6,11 @@
 
   <title>Teaching | Xinyuan Yang</title>
 
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    .nav-link {
-      transition: color 0.2s ease;
-    }
-
-    .nav-link:hover {
-      color: #6b7280;
+    .accent {
+      color: #111827;
     }
   </style>
 </head>
@@ -30,122 +20,125 @@
   <!-- Navigation -->
   <nav class="w-full border-b border-gray-200">
     <div
-      class="max-w-4xl mx-auto px-6 py-5
+      class="max-w-5xl mx-auto px-6 py-4
              flex flex-col sm:flex-row
              sm:justify-between sm:items-center gap-4"
     >
+
       <a
         href="index.html"
-        class="text-xl font-semibold tracking-tight nav-link"
+        class="text-xl font-semibold accent hover:underline"
       >
         Xinyuan Yang
       </a>
 
-      <div class="flex flex-wrap gap-x-7 gap-y-2 text-base">
-        <a href="index.html" class="nav-link">Home</a>
+      <div class="flex flex-wrap gap-x-7 gap-y-2 text-lg">
+        <a href="index.html" class="accent hover:underline">
+          Home
+        </a>
 
-        <a href="index.html#research" class="nav-link">
+        <a href="index.html#research" class="accent hover:underline">
           Research
         </a>
 
         <a
           href="teaching.html"
-          class="font-semibold border-b border-gray-900 pb-1"
+          class="accent hover:underline font-semibold"
         >
           Teaching
         </a>
 
-        <a href="file/CV.pdf" class="nav-link">
+        <a href="file/CV.pdf" class="accent hover:underline">
           CV
         </a>
 
         <a
           href="mailto:xy4066a@american.edu"
-          class="nav-link"
+          class="accent hover:underline"
         >
           Contact
         </a>
       </div>
+
     </div>
   </nav>
 
 
   <!-- Main Content -->
-  <main class="max-w-4xl mx-auto px-6 py-14">
+  <main class="max-w-5xl mx-auto px-6 py-12">
 
-    <!-- Page Header -->
-    <header class="mb-12">
-      <h1 class="text-3xl font-semibold tracking-tight mb-3">
-        Teaching
-      </h1>
-
-      <p class="text-gray-600 max-w-2xl leading-relaxed">
-        My teaching focuses on quantitative methodology, Bayesian
-        statistics, generalized linear models, and statistical methods
-        for the social sciences.
-      </p>
-    </header>
+    <h1 class="text-3xl font-semibold mb-10">
+      Teaching
+    </h1>
 
 
     <!-- American University -->
-    <section class="mb-14">
+    <section class="mb-12">
 
-      <h2 class="text-xl font-semibold mb-6">
+      <h2 class="text-xl font-semibold mb-5">
         American University
       </h2>
 
-      <div class="border-l-2 border-gray-200 pl-6 space-y-8">
+      <div class="border-l-2 border-gray-200 pl-5 space-y-7">
 
-        <!-- Course 1 -->
-        <article
+        <!-- GLM -->
+        <div
           class="flex flex-col sm:flex-row
                  sm:justify-between sm:items-start
-                 gap-3"
+                 gap-2"
         >
+
           <div>
             <p class="font-semibold">
-              Teaching Assistant
+              Teaching Fellow
             </p>
 
-            <p class="mt-1 italic">
+            <p class="italic mt-1">
               STAT-616 / GOVT-696 — Generalized Linear Models
-            </p>
-
-            <p class="mt-1 text-sm text-gray-600">
-              Graduate and Undergraduate Level
+              <span class="not-italic">
+                (Graduate / Undergraduate Level)
+              </span>
             </p>
           </div>
 
-          <p class="text-gray-500 italic whitespace-nowrap">
+          <p
+            class="italic text-gray-600
+                   sm:text-right whitespace-nowrap"
+          >
             Spring 2026
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- Course 2 -->
-        <article
+        <!-- Bayesian Statistics -->
+        <div
           class="flex flex-col sm:flex-row
                  sm:justify-between sm:items-start
-                 gap-3"
+                 gap-2"
         >
+
           <div>
             <p class="font-semibold">
-              Teaching Assistant
+              Teaching Fellow
             </p>
 
-            <p class="mt-1 italic">
+            <p class="italic mt-1">
               STAT-618 / GOVT-618 — Bayesian Statistics
-            </p>
-
-            <p class="mt-1 text-sm text-gray-600">
-              Graduate Level
+              <span class="not-italic">
+                (Graduate Level)
+              </span>
             </p>
           </div>
 
-          <p class="text-gray-500 italic whitespace-nowrap">
+          <p
+            class="italic text-gray-600
+                   sm:text-right whitespace-nowrap"
+          >
             Fall 2025
           </p>
-        </article>
+
+        </div>
 
       </div>
     </section>
@@ -154,89 +147,75 @@
     <!-- Harvard University -->
     <section>
 
-      <h2 class="text-xl font-semibold mb-6">
+      <h2 class="text-xl font-semibold mb-5">
         Harvard University
       </h2>
 
-      <div class="border-l-2 border-gray-200 pl-6 space-y-8">
+      <div class="border-l-2 border-gray-200 pl-5 space-y-7">
 
-        <!-- Course 1 -->
-        <article
+        <!-- Bayesian -->
+        <div
           class="flex flex-col sm:flex-row
                  sm:justify-between sm:items-start
-                 gap-3"
+                 gap-2"
         >
+
           <div>
             <p class="font-semibold">
               Teaching Fellow
             </p>
 
-            <p class="mt-1 italic">
+            <p class="italic mt-1">
               GOV 2017 — Applied Bayesian Statistics for the Social Sciences
-            </p>
-
-            <p class="mt-1 text-sm text-gray-600">
-              Graduate Level
+              <span class="not-italic">
+                (Graduate Level)
+              </span>
             </p>
           </div>
 
-          <p class="text-gray-500 italic whitespace-nowrap">
+          <p
+            class="italic text-gray-600
+                   sm:text-right whitespace-nowrap"
+          >
             Spring 2025
           </p>
-        </article>
+
+        </div>
 
 
-        <!-- Course 2 -->
-        <article
+        <!-- QSS -->
+        <div
           class="flex flex-col sm:flex-row
                  sm:justify-between sm:items-start
-                 gap-3"
+                 gap-2"
         >
+
           <div>
             <p class="font-semibold">
               Teaching Fellow
             </p>
 
-            <p class="mt-1 italic">
+            <p class="italic mt-1">
               GOV 2003 — Quantitative Social Science Methods II
-            </p>
-
-            <p class="mt-1 text-sm text-gray-600">
-              Graduate Level
+              <span class="not-italic">
+                (Graduate Level)
+              </span>
             </p>
           </div>
 
-          <p class="text-gray-500 italic whitespace-nowrap">
+          <p
+            class="italic text-gray-600
+                   sm:text-right whitespace-nowrap"
+          >
             Fall 2024
           </p>
-        </article>
+
+        </div>
 
       </div>
     </section>
 
   </main>
-
-
-  <!-- Footer -->
-  <footer class="max-w-4xl mx-auto px-6 py-10 mt-8">
-    <div
-      class="border-t border-gray-200 pt-6
-             text-sm text-gray-500
-             flex flex-col sm:flex-row
-             sm:justify-between gap-2"
-    >
-      <p>© 2026 Xinyuan Yang</p>
-
-      <p>
-        <a
-          href="mailto:xy4066a@american.edu"
-          class="hover:text-gray-900 transition"
-        >
-          xy4066a@american.edu
-        </a>
-      </p>
-    </div>
-  </footer>
 
 </body>
 </html>
